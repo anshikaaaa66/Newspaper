@@ -1,0 +1,129 @@
+/* General styles for the calendar page */
+.calendar-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #3a3a3a 25%, transparent 25%) -25px 0/50px 50px,
+              linear-gradient(45deg, transparent 75%, #3a3a3a 75%) -25px 0/50px 50px,
+              linear-gradient(45deg, transparent 75%, #3a3a3a 75%),
+              linear-gradient(45deg, #3a3a3a 25%, transparent 25%);
+  background-size: 50px 50px;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  text-align: center;
+  animation: sparkle 5s infinite;
+}
+
+/* Sparkling background animation */
+@keyframes sparkle {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Styles for the search bar container */
+.search-bar-container {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 10%;
+  padding: 15px;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Styles for the location input and date input */
+.location-input, .date-input {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  color: white;
+}
+
+/* Styles for the search button */
+.search-button {
+  padding: 15px 20px;
+  background-color: #4e54c8;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #8f94fb;
+}
+
+/* Styles for the news container */
+.news-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+  background: white;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Styles for each news card */
+.news-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.news-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.news-card p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.news-card a {
+  color: #4e54c8;
+  text-decoration: none;
+}
+
+.news-card a:hover {
+  text-decoration: underline;
+}
+

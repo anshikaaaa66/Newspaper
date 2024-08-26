@@ -1,0 +1,210 @@
+/* src/pages/About.css */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background: #f0f0f0; /* Light gray background for the entire section */
+  min-height: 100vh; /* Ensures the section takes up at least the full viewport height */
+}
+
+.about-content {
+  text-align: center; /* Centers the text within this block */
+  margin-bottom: 40px; /* Adds space below the content */
+}
+
+.about-content h1 {
+  font-size: 2.5rem; /* Large font size for the main heading */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #333; /* Dark gray color for the heading */
+}
+
+.about-content p {
+  font-size: 1.2rem; /* Slightly larger font size for paragraph text */
+  color: #555; /* Medium gray color for the paragraph text */
+  max-width: 600px; /* Limits the width of the paragraph text */
+  margin: 0 auto; /* Centers the paragraph within the section */
+}
+
+.about-squares {
+  display: flex; /* Flexbox layout for aligning squares in a row */
+  justify-content: space-around; /* Distributes space evenly around the squares */
+  width: 100%; /* Takes up the full width available */
+  max-width: 900px; /* Limits the maximum width to 900px */
+  gap: 20px; /* Adds space between the squares */
+}
+
+.about-square {
+  width: 100px; /* Width of each square */
+  height: 100px; /* Height of each square */
+  background: #007bff; /* Blue background for the squares */
+  border-radius: 10px; /* Rounds the corners of each square */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+/* Dark green background with grid overlay effect */
+.home {
+  position: relative;
+  background-color: #004d00; /* Dark green background */
+  min-height: 100vh;
+  overflow: hidden; /* Ensures the sparkles stay within bounds */
+}
+
+/* Grid overlay effect */
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 95%, rgba(255, 255, 255, 0.1) 5%),
+              linear-gradient(to bottom, transparent 95%, rgba(255, 255, 255, 0.1) 5%);
+  background-size: 50px 50px; /* Adjust this for grid size */
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.2; /* Lighter opacity for subtle grid lines */
+}
+
+/* Shiny sprinkle effect */
+.home::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3), transparent);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Sparkling animation */
+.sparkle {
+  position: absolute;
+  width: 1px; /* Thinner lines for sparkle effect */
+  height: 1px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  animation: sparkle 3s infinite ease-in-out;
+}
+
+/* Keyframes for sparkling animation */
+@keyframes sparkle {
+  0%, 100% { transform: translate(0, 0); opacity: 0; }
+  50% { transform: translate(100vw, 100vh); opacity: 1; }
+}
+
+/* Overlay multiple sparkles */
+.sparkle:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+.sparkle:nth-child(2) { top: 30%; left: 70%; animation-delay: 1s; }
+.sparkle:nth-child(3) { top: 50%; left: 20%; animation-delay: 2s; }
+.sparkle:nth-child(4) { top: 70%; left: 80%; animation-delay: 0.5s; }
+.sparkle:nth-child(5) { top: 90%; left: 40%; animation-delay: 1.5s; }
+/* src/pages/About.css */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background: #f0f0f0; /* Light gray background for the entire section */
+  min-height: 100vh; /* Ensures the section takes up at least the full viewport height */
+}
+
+.about-content {
+  text-align: center; /* Centers the text within this block */
+  margin-bottom: 40px; /* Adds space below the content */
+}
+
+.about-content h1 {
+  font-size: 2.5rem; /* Large font size for the main heading */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #333; /* Dark gray color for the heading */
+}
+
+.about-content p {
+  font-size: 1.2rem; /* Slightly larger font size for paragraph text */
+  color: #555; /* Medium gray color for the paragraph text */
+  max-width: 600px; /* Limits the width of the paragraph text */
+  margin: 0 auto; /* Centers the paragraph within the section */
+}
+
+.about-squares {
+  display: flex; /* Flexbox layout for aligning squares in a row */
+  justify-content: space-around; /* Distributes space evenly around the squares */
+  width: 100%; /* Takes up the full width available */
+  max-width: 900px; /* Limits the maximum width to 900px */
+  gap: 20px; /* Adds space between the squares */
+}
+
+.about-square {
+  width: 100px; /* Width of each square */
+  height: 100px; /* Height of each square */
+  background: #007bff; /* Blue background for the squares */
+  border-radius: 10px; /* Rounds the corners of each square */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+/* Dark green background with grid overlay effect */
+.home {
+  position: relative;
+  background-color: #004d00; /* Dark green background */
+  min-height: 100vh;
+  overflow: hidden; /* Ensures the sparkles stay within bounds */
+}
+
+/* Grid overlay effect */
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 95%, rgba(255, 255, 255, 0.1) 5%),
+              linear-gradient(to bottom, transparent 95%, rgba(255, 255, 255, 0.1) 5%);
+  background-size: 50px 50px; /* Adjust this for grid size */
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.2; /* Lighter opacity for subtle grid lines */
+}
+
+/* Shiny sprinkle effect */
+.home::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3), transparent);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Sparkling animation */
+.sparkle {
+  position: absolute;
+  width: 1px; /* Thinner lines for sparkle effect */
+  height: 1px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  animation: sparkle 3s infinite ease-in-out;
+}
+
+/* Keyframes for sparkling animation */
+@keyframes sparkle {
+  0%, 100% { transform: translate(0, 0); opacity: 0; }
+  50% { transform: translate(100vw, 100vh); opacity: 1; }
+}
+
+/* Overlay multiple sparkles */
+.sparkle:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+.sparkle:nth-child(2) { top: 30%; left: 70%; animation-delay: 1s; }
+.sparkle:nth-child(3) { top: 50%; left: 20%; animation-delay: 2s; }
+.sparkle:nth-child(4) { top: 70%; left: 80%; animation-delay: 0.5s; }
+.sparkle:nth-child(5) { top: 90%; left: 40%; animation-delay: 1.5s; }

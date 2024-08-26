@@ -1,0 +1,61 @@
+/* Navbar.css */
+
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: 1001;
+}
+
+.logo-text {
+  color: yellow; /* Set the text color to yellow */
+  font-size: 2rem; /* Adjust font size as needed */
+  font-weight: bold; /* Make the text bold if desired */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5); /* Transparent background */
+  padding: 10px 20px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Initial shadow */
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35); /* Shadow on hover */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #f39c12; /* Color change on hover */
+}

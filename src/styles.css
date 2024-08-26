@@ -1,0 +1,128 @@
+/* src/styles.css */
+body {
+  margin-top: 64px; /* Adjust based on navbar height to prevent content from hiding behind the fixed navbar */
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Navbar styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.container {
+  max-width: 1200px; /* Adjust to set the width of the horizontal box */
+}
+
+.text-gray-900 {
+  color: #1a202c;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-b-lg {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bg-opacity-50 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-indigo-500 {
+  background-color: #6366f1;
+}
+
+.bg-purple-100 {
+  background-color: #e9d8fd;
+}
+
+.bg-purple-200 {
+  background-color: #d6bcfa;
+}
+
+.hover\:text-gray-900:hover {
+  color: #1a202c;
+}
+
+.hover\:bg-purple-200:hover {
+  background-color: #d6bcfa;
+}
+
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: auto;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.5); /* Transparent background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Animated shadow */
+  border-radius: 15px; /* Rounded corners */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-container:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35); /* Larger shadow on hover */
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #f39c12;
+}
+
+

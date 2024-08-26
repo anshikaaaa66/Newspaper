@@ -1,0 +1,71 @@
+/* General styles for the contact us page */
+.contact-us-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+/* Styles for the form container */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styles for form headings */
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Styles for forms */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Styles for form inputs and buttons */
+.form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 10px;
+  background-color: #4e54c8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #8f94fb;
+}
+
+/* Styles for the form toggle text */
+.form p {
+  margin-top: 15px;
+}
+
+.form p button {
+  background: none;
+  border: none;
+  color: #4e54c8;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
